@@ -1,48 +1,40 @@
-# Next.js 13 Web Application Starter
+# nextdemo
 
-A clean, minimalist Next.js 13 Pages Router boilerplate and responsive single-page web app starter with `@next/font` optimization.
+A Next.js 13 Pages Router project created from the default starter, with the starter page and sample API route still in place.
 
-## Overview
+**Status:** Stub. `pages/index.js` still has the create-next-app title and markup, and the repository has fewer than five real source files.
 
-`nextdemo` provides a foundation for rapid Next.js front-end prototyping featuring custom font loading (`@next/font`), CSS modules, and optimized static asset delivery.
+## The problem
 
-## Tech Stack
+No product problem is described. The project is the stock starter that `create-next-app` generates, kept as a base for prototypes.
 
-- **Framework**: [Next.js](https://nextjs.org/) (v13 Pages Router)
-- **Frontend Core**: React 18, JavaScript
-- **Fonts**: `@next/font`
+## What it does
 
-## Prerequisites
+- Renders the default starter home page in `pages/index.js`, with Inter loaded through `next/font` and CSS module styles from `styles/Home.module.css`.
+- Serves the sample API route at `pages/api/hello.js`.
+- Sets up the global app and document shells (`pages/_app.js`, `pages/_document.js`).
 
-- Node.js (v18 or higher recommended)
-- Package manager (`pnpm` or `npm`)
+## How it's built
 
-## Getting Started
+- Next.js 13 Pages Router with React 18, in JavaScript.
+- Styling with `styles/globals.css` and CSS modules.
+- The font import uses the `@next/font/google` package, which is the older name for `next/font`.
 
-1. **Install dependencies**:
-   ```bash
-   pnpm install
-   # or
-   npm install
-   ```
+## Running it locally
 
-2. **Run the Development Server**:
-   ```bash
-   pnpm dev
-   # or
-   npm run dev
-   ```
+From `package.json`:
 
-3. **Access the Application**:
-   Open `http://localhost:3000` in your web browser.
+```bash
+npm install
+npm run dev      # next dev
+npm run build    # next build
+npm run start    # next start
+npm run lint     # next lint
+```
 
-## Available Scripts
+## What's left
 
-- `npm run dev` - Starts the Next.js development server.
-- `npm run build` - Compiles the production build.
-- `npm start` - Starts the production server.
-- `npm run lint` - Runs Next.js ESLint checks.
-
-## Author
-
-Created by [Mehfooz-ur-Rehman](https://github.com/MehfoozurRehman).
+- The page title and content are still the create-next-app defaults.
+- The sample API route and starter markup should be replaced or removed before this is used for a real project.
+- Next.js 13 is an older release.
+- No tests.
